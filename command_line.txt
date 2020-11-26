@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+python train.py
+tensorboard --logdir=./runs/1527400164
+http://127.0.0.1:6006/
+python eval.py --eval_train --checkpoint_dir="./runs/1529582704/checkpoints/"
