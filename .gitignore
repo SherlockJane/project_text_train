@@ -1,0 +1,30 @@
+# 以'#'开始的行，被视为注释.                                                                                                                          
+
+# 忽略掉所有文件名是 foo.txt的文件.
+
+foo.txt
+
+# 忽略所有生成的 html文件,
+
+*.html
+
+# foo.html是手工维护的，所以例外.
+
+!foo.html
+
+# 忽略所有.o和 .a文件.
+
+*.[oa]
+
+# /mtk/过滤整个文件夹
+# *.zip 过滤所有.zip文件
+# /mtk/do.c 过滤某个具体文件
+
+# !*.zip  !/mtk/one.txt 满足这类规则的文件添加到版本管理中
+
+# eg:需要管理/mtk/目录中的one.txt文件，这个目录中的其他文件都不需要管理
+# /mtk/
+# !/mtk/one.txt
+
+# pay
+# attention:项目开始就要创建.gitignore文件，一旦push这些新的过滤规则不起作用
